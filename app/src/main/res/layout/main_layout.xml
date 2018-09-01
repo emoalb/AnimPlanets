@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="#ededed">
+    <ImageView
+        android:id="@+id/sun_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_social_mood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/earth_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_social_mood"
+        app:layout_constraintCircle="@+id/sun_image"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="90dp" />
+
+    <ImageView
+        android:id="@+id/mars_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_social_mood"
+        app:layout_constraintCircle="@+id/sun_image"
+        app:layout_constraintCircleAngle="110"
+        app:layout_constraintCircleRadius="130dp" />
+
+    <ImageView
+        android:id="@+id/saturn_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_social_mood"
+        app:layout_constraintCircle="@+id/sun_image"
+        app:layout_constraintCircleAngle="235"
+        app:layout_constraintCircleRadius="180dp" />
+
+
+</android.support.constraint.ConstraintLayout>
